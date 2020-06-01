@@ -1,0 +1,39 @@
+
+#btn-1 {
+ 
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#btn-1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+#btn-2 {
+ 
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#btn-2::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+button{
+  margin: 100px;
+  top:100px;
+}

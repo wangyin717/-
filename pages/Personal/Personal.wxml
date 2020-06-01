@@ -1,0 +1,74 @@
+
+
+<view class="section">
+
+  <picker id="pick-1" mode="date" value="{{date}}" start="2017-09-01" end="2020-09-01" bindchange="bindDateChange" fields="month">
+    <view class="picker" id="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+<view id='view-1'>
+   <view id="total"><text>总支出：</text><text>总收入：</text>
+   </view>
+
+
+<!-- <block wx:for="{{lists}}" wx:key> -->
+<view id="viewitems" style="top:{{lists[index].top}}px; " wx:for="{{lists}}">
+       <view name="riqi">日期: {{lists[index].date}}</view>
+   <view name="jine">金额: {{lists[index].shuru}}</view>
+   <view name="leixing">类型: {{lists[index].typeprimary}}</view>
+   <view name="zhichu">收入&支出: {{lists[index].primary}}</view>
+   </view>
+   <!-- </block> -->
+  
+
+  
+
+
+
+
+
+
+
+  <cover-view id="view-2" style="display:{{dis}}">
+   <cover-image id="img-1" src="../image/添加.png" bindtap="add"></cover-image>
+  </cover-view>
+
+  <view style="display:{{display}};" id="view-3">
+  <button data-id="支出" id="btn-1" type="{{primary == '支出' ? 'primary' : 'default'}}"bindtap="expend">支出</button>
+  <button data-id="收入" id="btn-2" type="{{primary== '收入' ? 'primary' : 'default'}}" bindtap="income">收入</button>
+  <input id="inp"  bindinput="inp" type="number" confirm-type="done" auto-focus placeholder="￥"></input>
+<view id="view-4">
+ <button data-id="服饰" bindtap="typ1" class="type-1" type="{{typeprimary == '服饰' ? 'primary' : 'default'}}">服饰</button>
+
+ <button data-id="餐饮"  bindtap="typ2" class="type-1" type="{{typeprimary == '餐饮' ? 'primary' : 'default'}}">餐饮</button>
+
+ <button data-id="交通"  bindtap="typ3" class="type-1" type="{{typeprimary == '交通' ? 'primary' : 'default'}}">交通</button>
+
+ <button data-id="住房"  bindtap="typ4" class="type-1" type="{{typeprimary == '住房' ? 'primary' : 'default'}}">住房</button>
+
+ <button data-id="购物"  bindtap="typ5" class="type-1" type="{{typeprimary == '购物' ? 'primary' : 'default'}}">购物</button>
+
+ <button data-id="生活"  bindtap="typ6" class="type-1" type="{{typeprimary == '生活' ? 'primary' : 'default'}}">生活</button>
+</view>
+<view id="view-5"><button bindtap="tianjia" id="btn-3" type="primary">添加</button></view>
+<view id="view-6"><button id="btn-4" bindtap="close" style="background-image:url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2675357510,1626192845&fm=26&gp=0.jpg);" plain='true'></button></view>
+
+<view id="sel">
+
+  <picker id="pick-2" mode="date" value="{{date}}" start="2017-09-01" end="2020-09-01" bindchange="bindDateChange" fields="month">
+    <view class="picker" id="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+</view>
+
+</view>
+
+
+
+

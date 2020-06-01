@@ -1,0 +1,5 @@
+
+
+<button id="btn-1" type="primary" bindtap="clickbtn">个人账单</button>
+
+<button id="btn-2" type="primary">多人账单</button>
